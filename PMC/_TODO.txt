@@ -1,0 +1,161 @@
+
+tank/vehicle crewman:
+
+US_Soldier_Crew_EP1
+
+
+PMC_ArmA_Default_Music.sqf needs to be ArmA 2 ported, simple change of class names.
+
+
+/*
+(configFile >> "CfgGroups" >> "East" >> "RU" >> "Motorized" >> "RU_MotInfSquad")
+
+	EAST
+
+RU
+
+- Motorized
+	- RU_MotInfSquad		(truck + many men)
+	- RU_MotInfSection_Recon	(2 armed vodniks + many men)
+	- RU_MotInfSection_Patrol	(armed vodnik + few men)
+
+- Mechanized
+	- RU_MechInfSquad_1	(bmp + men)
+	- RU_MechInfSquad_2	(btr + men)
+
+- Armored
+	- RU_TankPlatoon	(3 t90's)
+
+BIS_TK
+- Infantry
+	- TK_InfantrySquad
+	- TK_InfantrySection
+	- TK_InfantrySectionAT
+	- TK_InfantrySectionAA
+	- TK_InfantrySectionMG
+	- TK_SniperTeam
+	- TK_SpecialPurposeSquad
+
+- Motorized
+	- TK_MotorizedInfanterySquad
+	- TK_MotorizedReconSection
+	- TK_MotorizedPatrol
+
+- Mechanized
+	- TK_MechanizedInfantrySquadBMP2
+	- TK_MechanizedInfantrySquadBTR60
+	- TK_MechanizedSpecialSquad
+	- TK_MechanizedReconSection
+	- TK_MechanizedReconSectionAT
+
+- Armored
+	- TK_T72Platoon
+	- TK_T55Platoon
+	- TK_T34Platoon
+
+BIS_TK_INS
+- Infantry
+	- TK_INS_Group
+	- TK_INS_Patrol
+	- TK_INS_AATeam
+	- TK_INS_ATTeam
+
+- Motorized
+	- TK_INS_Technicals
+	- TK_INS_MotorizedGroup
+	- TK_INS_MotorizedPatrolBTR40
+
+
+	WEST
+
+USMC
+- Motorized
+	- USMC_MotInfSection	(two armed hummers + men)
+	- USMC_MotInfSection_AT	(two TOW hummers + couple of guys)
+
+- Mechanized
+	- USMC_MechInfSquad	(aavp7 + men)
+	- USMC_MechReconSection	(lav-25 + men)
+
+- Armored
+	- USMC_TankPlatoon	(4 m1a2 tusk's)
+
+BIS_US
+- Infantry
+	- US_RifleSquad
+	- US_WeaponsSquad
+	- US_Team
+	- US_TeamMG
+	- US_TeamAT
+	- US_TeamSupport
+	- US_HeavyATTeam
+	- US_SniperTeam
+	- US_DeltaForceTeam
+
+- Motorized
+	- US_MotorizedSection
+	- US_MotorizedSectionAT
+	- US_DeltaPatrolATV
+	- US_DeltaPatrolHMMWV
+
+- Mechanized
+	- US_MechanizedInfantrySquadICVM2
+	- US_MechanizedInfantrySquadICVMK19
+	- US_MechanizedReconSection
+
+- Armored
+	- US_MGSPlatoon
+	- US_M1A2Platoon
+	- US_M1A1Platoon
+	- US_M1A2Section
+
+BIS_CZ
+- Infantry
+	- ACR_InfantryPatrol
+	- ACR_SpecialForcesTeam
+
+- Motorized
+	- ACR_MotorizedPatrol
+	- ACR_SpecialForcesPatrolLandRover
+	- ACR_SpecialForcesPatrolATV
+
+BIS_GER
+- Infantry
+	- KSKTeam
+
+	Guerrila
+
+BIS_TK_GUE
+- Infantry
+	- TK_GUE_Group
+	- TK_GUE_GroupWeapons
+	- TK_GUE_Patrol
+	- TK_GUE_ATTeam
+	- TK_GUE_AATeam
+	- TK_GUE_SniperTeam
+
+- Motorized
+	- TK_GUE_Technicals
+	- TK_GUE_MotorizedGroup
+	- TK_GUE_MotorizedPatrol
+
+- Mechanized
+	- TK_GUE_MechanizedPatrol
+	- TK_GUE_MechanizedGroup
+
+- Armored
+	- TK_GUE_T55Section
+	- TK_GUE_T34Platoon
+
+BIS_UN
+- Infantry
+	- UN_Patrol
+
+- Motorized
+	- UN_MotorizedPatrol
+
+- Mechanized
+	- UN_MechanizedPatrolBMP2
+	- UN_MechanizedPatrolM113
+
+*/

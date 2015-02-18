@@ -1,0 +1,39 @@
+
+PMC_Create_Takistani_Militia_AA_Site =
+{
+	private
+	[
+		"_grp",
+		"_respawnpoint",
+		"_vcl"
+	];
+
+	_respawnpoint = _this select 0;
+
+	_grp = objNull;
+	waitUntil
+	{
+		_grp = createGroup (east);
+		!(isNull _grp);
+	};
+
+	_vcl = "DSHKM_TK_INS_EP1" createVehicle _respawnpoint;
+	_vcl setDir random 360;
+	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
+
+	"TK_INS_Soldier_EP1" createUnit [_respawnpoint, _grp, "", 1, "SERGEANT"];
+	(units _grp select 0) moveInGunner _vcl;
+
+	_vcl = "ZU23_TK_INS_EP1" createVehicle [(_respawnpoint select 0)+10, (_respawnpoint select 0)+10, 0];
+	_vcl setDir random 360;
+	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
+
+	"TK_INS_Soldier_EP1" createUnit [_respawnpoint, _grp, "", 1, "CORPORAL"];
+	(units _grp select 1) moveInGunner _vcl;
+
+	"TK_INS_Soldier_AT_EP1" createUnit [_respawnpoint, _grp, "", 0.33, "CORPORAL"];
+	"TK_INS_Soldier_EP1" createUnit [_respawnpoint, _grp, "", 0.33, "PRIVATE"];
+	"TK_INS_Soldier_MG_EP1" createUnit [_respawnpoint, _grp, "", 1, "PRIVATE"];
+
+	_grp
+};
