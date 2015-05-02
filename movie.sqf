@@ -14,6 +14,11 @@ _camera cameraEffect ["internal","back"];
 _camera camSetFOV 0.700;
 
 titleCut ["Loading...", "BLACK OUT", 0.0001];
+
+// this is required in v1.63 that the pmc_list trigger list has been initialized before even trying it heh :(
+// aand, I guess it doenst hurt to start it little slower in any version either.
+sleep 1;
+
 waitUntil { count pmc_list > 0; };
 titleText ["Welcome to PMC video cutscene", "plain down", 2];
 sleep 1;
