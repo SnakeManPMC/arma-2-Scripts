@@ -1,5 +1,5 @@
 
-// is this Chernarus East European Guerillas??
+// is this Chernarus East European Guerrillas??
 
 PMC_Create_Guerrilla_Militia =
 {

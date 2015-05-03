@@ -46,7 +46,7 @@ switch (side _dude) do
 	{
 		_markerobj setMarkerColorLocal "ColorBlue";
 	};
-	// todo add guerilla
+	// todo add guerrilla but its really RESISTANCE you fucking idiot!
 	// todo add civilian
 };
 

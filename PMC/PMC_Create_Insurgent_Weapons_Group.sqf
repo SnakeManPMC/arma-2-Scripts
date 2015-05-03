@@ -1,5 +1,5 @@
 
-// is this Chernarus East European OPFOR Guerillas??
+// is this Chernarus East European OPFOR Guerrillas??
 
 PMC_Create_Insurgent_Weapons_Group =
 {
