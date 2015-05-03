@@ -1,7 +1,7 @@
 
 // this was file name PMC_Create_GuerRilla_Takistan.sqf before! :)
 
-PMC_Create_Guerilla_Takistan_Group =
+PMC_Create_Guerrilla_Takistan_Group =
 {
 	private
 	[

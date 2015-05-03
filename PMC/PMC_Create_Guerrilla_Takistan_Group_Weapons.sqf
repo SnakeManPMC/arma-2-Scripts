@@ -1,7 +1,7 @@
 
 // this was PMC_Create_GuerRilla_Takistan_Weapons before :)
 
-PMC_Create_Guerilla_Takistan_Group_Weapons =
+PMC_Create_Guerrilla_Takistan_Group_Weapons =
 {
 	private
 	[

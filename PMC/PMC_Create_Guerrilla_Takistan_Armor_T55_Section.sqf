@@ -1,5 +1,5 @@
 
-PMC_Create_Guerilla_Takistan_Armor_T55_Section =
+PMC_Create_Guerrilla_Takistan_Armor_T55_Section =
 {
 	private
 	[

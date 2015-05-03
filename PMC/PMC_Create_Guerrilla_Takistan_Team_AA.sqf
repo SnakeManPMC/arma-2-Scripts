@@ -1,5 +1,5 @@
 
-PMC_Create_Guerilla_Takistan_Team_AA =
+PMC_Create_Guerrilla_Takistan_Team_AA =
 {
 	private
 	[

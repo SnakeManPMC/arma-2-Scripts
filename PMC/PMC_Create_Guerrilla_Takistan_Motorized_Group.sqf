@@ -1,5 +1,5 @@
 
-PMC_Create_Guerilla_Takistan_Motorized_Group =
+PMC_Create_Guerrilla_Takistan_Motorized_Group =
 {
 	private
 	[

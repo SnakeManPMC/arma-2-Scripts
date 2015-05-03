@@ -1,5 +1,5 @@
 
-PMC_Create_Guerilla_Takistan_Sniper =
+PMC_Create_Guerrilla_Takistan_Sniper =
 {
 	private
 	[

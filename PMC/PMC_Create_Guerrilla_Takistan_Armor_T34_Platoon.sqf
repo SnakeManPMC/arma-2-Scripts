@@ -1,5 +1,5 @@
 
-PMC_Create_Guerilla_Takistan_Armor_T34_Platoon =
+PMC_Create_Guerrilla_Takistan_Armor_T34_Platoon =
 {
 	private
 	[
