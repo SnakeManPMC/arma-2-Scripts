@@ -19,7 +19,7 @@ titleCut ["Loading...", "BLACK OUT", 0.0001];
 // aand, I guess it doenst hurt to start it little slower in any version either.
 sleep 1;
 
-waitUntil { count pmc_list > 0; };
+waitUntil { count list pmc_list > 0; };
 titleText ["Welcome to PMC video cutscene", "plain down", 2];
 sleep 1;
 titleCut ["","black in",2];
@@ -34,15 +34,15 @@ _PMC_Statistics =
 	format
 		[
 			"Our war has: %1 tanks, %2 aircrafts, %3 helicopters, %4 cars, %5 statics, %6 men.\nBLUFOR %7, OPFOR %8, INDEPENDENT %9.",
-			('tank' countType pmc_list),
-			('Plane' countType pmc_list),
-			('helicopter' countType pmc_list),
-			('car' countType pmc_list),
-			('StaticWeapon' countType pmc_list),
-			('man' countType pmc_list),
-			(WEST countSide pmc_list),
-			(EAST countSide pmc_list),
-			(RESISTANCE countSide pmc_list)
+			('tank' countType list pmc_list),
+			('Plane' countType list pmc_list),
+			('helicopter' countType list pmc_list),
+			('car' countType list pmc_list),
+			('StaticWeapon' countType list pmc_list),
+			('man' countType list pmc_list),
+			(WEST countSide list pmc_list),
+			(EAST countSide list pmc_list),
+			(RESISTANCE countSide list pmc_list)
 		],
 		"plain down",
 		2
@@ -53,9 +53,9 @@ while {true} do
 {
 	call _PMC_Statistics;
 
-	_r1 = random (count pmc_list);
+	_r1 = random (count list pmc_list);
 	_r1 = _r1 - (_r1 mod 1);
-	_doka = pmc_list select _r1;
+	_doka = list pmc_list select _r1;
 
 	if (alive _doka) then
 	{
@@ -65,9 +65,9 @@ while {true} do
 	_camera camCommit 0;
 	sleep 7 + random 8;
 
-	_r1 = random (count pmc_list);
+	_r1 = random (count list pmc_list);
 	_r1 = _r1 - (_r1 mod 1);
-	_doka = pmc_list select _r1;
+	_doka = list pmc_list select _r1;
 
 	if (alive _doka) then
 	{
