@@ -62,11 +62,8 @@ PMC_patrol_vehicle_blufor =
 	_vcl = _myVec createVehicle _respawnpoint;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"US_Soldier_GL_EP1" createUnit [_respawnpoint, _grp, "", (random 1), "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;

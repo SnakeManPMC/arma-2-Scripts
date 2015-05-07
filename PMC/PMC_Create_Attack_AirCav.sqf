@@ -17,11 +17,8 @@ _respawnpoint = _this select 1;
 _waypointRanPosit = 100;
 
 _grp = objNull;
-waitUntil
-{
-	_grp = createGroup (west);
-	!(isNull _grp);
-};
+_grp = createGroup west;
+waitUntil {!(isNull _grp)};
 
 "VTE_acofficer" createUnit [_respawnpoint, _grp, "", (random 1), "LIEUTENANT"];
 "VTE_acsquadleader" createUnit [_respawnpoint, _grp, "", (random 1), "SERGEANT"];

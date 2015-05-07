@@ -27,11 +27,8 @@ PMC_Create_Takistani_Militia_Statics =
 	_vcl setDir random 360;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	"TK_INS_Soldier_EP1" createUnit [_respawnpoint, _grp, "", (random 1), "SERGEANT"];
 	(units _grp select 0) moveInGunner _vcl;

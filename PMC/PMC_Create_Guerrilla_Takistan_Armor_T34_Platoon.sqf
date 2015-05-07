@@ -10,11 +10,8 @@ PMC_Create_Guerrilla_Takistan_Armor_T34_Platoon =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (resistance);
-		!(isNull _grp);
-	};
+	_grp = createGroup resistance;
+	waitUntil {!(isNull _grp)};
 
 	_vcl = "T34_TK_GUE_EP1" createVehicle _respawnpoint;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];

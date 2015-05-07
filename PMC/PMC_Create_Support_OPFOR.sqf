@@ -30,11 +30,8 @@ PMC_Create_Support_OPFOR =
 	_waypointRanPosit = 100;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	_crewType = getText (configFile >> "CfgVehicles" >> (typeOf (_tmp select 0)) >> "Crew");
 

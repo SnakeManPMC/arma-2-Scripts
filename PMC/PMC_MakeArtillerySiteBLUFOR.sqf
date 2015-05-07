@@ -25,11 +25,8 @@ PMC_MakeArtillerySiteBLUFOR =
 	_vcl setPos _respawnpoint;
 
         _grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// first vehicle	
 	"USMC_Soldier_Crew" createUnit [_respawnpoint, _grp, "", (random 1), "LIEUTENANT"];

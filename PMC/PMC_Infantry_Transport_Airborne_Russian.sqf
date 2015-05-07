@@ -35,12 +35,9 @@ publicVariable "PMC_InfTransport";
 
 _vcl = objNull;
 _HeloGrp = objNull;
+_HeloGrp = createGroup east;
+waitUntil {!(isNull _HeloGrp)};
 
-waitUntil
-{
-	_HeloGrp = createGroup (east);
-	!(isNull _HeloGrp);
-};
 // create ArmA 2 Mi17 and basic RU pilot
 _vcl = createVehicle ["Mi17_rockets_RU", _rtb, [], 0, "FLY"];
 "RU_Soldier_Pilot" createUnit [_rtb, _HeloGrp, "", 1, "SERGEANT"];

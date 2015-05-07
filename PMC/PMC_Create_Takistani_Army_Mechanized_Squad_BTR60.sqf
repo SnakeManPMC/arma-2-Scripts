@@ -10,11 +10,8 @@ PMC_Create_Takistani_Army_Mechanized_Squad_BTR60 =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	"TK_Soldier_SL_EP1" createUnit [_respawnpoint, _grp, "", 0.59, "LIEUTENANT"];
 	

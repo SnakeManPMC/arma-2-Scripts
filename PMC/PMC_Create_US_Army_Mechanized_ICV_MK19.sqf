@@ -10,11 +10,8 @@ PMC_Create_US_Army_Mechanized_ICV_MK19 =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"US_Soldier_SL_EP1" createUnit [_respawnpoint, _grp, "", 0.59, "LIEUTENANT"];
 

@@ -14,11 +14,8 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
         _myVec = objNull;
 	_vcl = objNull;
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// first vehicle
 	_myVec = (PMC_blufor_vehicle_heavy select round random (count PMC_blufor_vehicle_heavy));

@@ -36,11 +36,9 @@ publicVariable "PMC_InfTransport";
 _vcl = objNull;
 _HeloGrp = objNull;
 
-waitUntil
-{
-	_HeloGrp = createGroup (west);
-	!(isNull _HeloGrp);
-};
+_HeloGrp = createGroup west;
+waitUntil {!(isNull _HeloGrp)};
+
 // create ArmA 2 UH-60 Blackhawk and basic US pilot
 _vcl = createVehicle ["MH60S", _rtb, [], 0, "FLY"];
 "USMC_Soldier_Pilot" createUnit [_rtb, _HeloGrp, "", 1, "SERGEANT"];

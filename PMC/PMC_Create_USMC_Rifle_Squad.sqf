@@ -10,11 +10,8 @@ PMC_Create_USMC_Rifle_Squad =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// USMC rifle squad
 

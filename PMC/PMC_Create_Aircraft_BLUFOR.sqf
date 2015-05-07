@@ -30,11 +30,8 @@ PMC_Create_Aircraft_BLUFOR =
 	_myVec = (["A10_US_EP1", "MQ9PredatorB_US_EP1"] select floor random 2);
 	_vcl = createVehicle [_myVec, _respawnpoint, [], 0, "FLY"];
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"US_Soldier_Pilot_EP1" createUnit [_respawnpoint, _grp, "", (random 1), "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;

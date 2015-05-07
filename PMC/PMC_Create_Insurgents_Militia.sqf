@@ -12,11 +12,8 @@ PMC_Create_Insurgents_Militia =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	"Ins_Worker2" createUnit [_respawnpoint, _grp, "", 0.46, "SERGEANT"];
 	"INS_Woodlander3" createUnit [_respawnpoint, _grp, "", 0.33, "CORPORAL"];

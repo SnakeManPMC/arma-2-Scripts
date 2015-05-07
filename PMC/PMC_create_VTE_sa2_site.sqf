@@ -31,11 +31,8 @@ _t = (PMC_targets select _r);
 _tp = getPos _t;
 
 _grp = objNull;
-waitUntil
-{
-	_grp = createGroup (east);
-	!(isNull _grp);
-};
+_grp = createGroup east;
+waitUntil {!(isNull _grp)};
 
 /* the radar in the middle.
 something wrong with this fansong unit, the unit is NOT placed in the vehicle,

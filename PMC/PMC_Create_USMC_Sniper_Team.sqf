@@ -10,11 +10,8 @@ PMC_Create_USMC_Sniper_Team =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// USMC Sniper Team
 

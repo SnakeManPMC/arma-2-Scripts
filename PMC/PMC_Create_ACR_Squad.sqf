@@ -10,11 +10,8 @@ PMC_Create_ACR_Squad =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"CZ_Soldier_SL_DES_EP1" createUnit [_respawnpoint, _grp, "", 0.59, "LIEUTENANT"];
 	"CZ_Soldier_MG_DES_EP1" createUnit [_respawnpoint, _grp, "", 0.46, "SERGEANT"];

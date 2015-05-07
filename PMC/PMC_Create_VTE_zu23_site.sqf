@@ -32,11 +32,8 @@ _t = (PMC_targets select _r);
 _tp = getPos _t;
 
 _grp = objNull;
-waitUntil
-{
-	_grp = createGroup (east);
-	!(isNull _grp);
-};
+_grp = createGroup east;
+waitUntil {!(isNull _grp)};
 
 // zu23 cannon
 _vcl = "vte_zu23" createVehicle _tp;

@@ -13,11 +13,8 @@ PMC_Create_Takistani_Insurgents_Technicals =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (RESISTANCE);
-		!(isNull _grp);
-	};
+	_grp = createGroup resistance;
+	waitUntil {!(isNull _grp)};
 
 	"TK_GUE_Soldier_TL_EP1" createUnit [_respawnpoint, _grp, "", 0.46, "SERGEANT"];
 

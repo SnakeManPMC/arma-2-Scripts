@@ -16,11 +16,8 @@ _PMC_MakeGuardInfAirCav =
         _targetpoint = _this select 1;
         _waypointRanPosit = _this select 2;
         _grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"VTE_acofficer" createUnit [_respawnpoint, _grp, "", (random 1), "LIEUTENANT"];
 	"VTE_acsquadleader" createUnit [_respawnpoint, _grp, "", (random 1), "SERGEANT"];

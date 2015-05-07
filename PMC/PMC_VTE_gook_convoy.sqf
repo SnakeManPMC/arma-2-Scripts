@@ -14,11 +14,8 @@ _PMC_CreateConvoyVehicles =
         
         _vcl = objNull;
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	// first vehicle t55
 	_vcl = "vte_t55" createVehicle _respawnpoint;

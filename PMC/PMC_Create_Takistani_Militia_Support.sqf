@@ -13,11 +13,8 @@ PMC_Create_Takistani_Militia_Support =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (EAST);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	// car 1 - REAMMO
 	_vcl = "V3S_Reammo_TK_GUE_EP1" createVehicle _respawnpoint;

@@ -46,11 +46,8 @@ _PMC_MakeHeloBLUFOR =
 	_myVec = (_helos select round random (_maxH - 1));
 	_vcl = _myVec createVehicle _respawnpoint;
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	if (PMC_debug) then { player sideChat format["created: %1",_myVec]; };
 

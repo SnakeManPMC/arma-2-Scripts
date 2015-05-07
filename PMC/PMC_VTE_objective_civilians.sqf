@@ -36,11 +36,8 @@ private ["_grp","_targetpoint","_waypointRanPosit"];
         _waypointRanPosit = _this select 1;
         
         _grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (CIVILIAN);
-		!(isNull _grp);
-	};
+	_grp = createGroup CIVILIAN;
+	waitUntil {!(isNull _grp)};
 
 	"vte_villager1" createUnit [_targetpoint, _grp, "", (random 1), "LIEUTENANT"];
 	"vte_villager2" createUnit [_targetpoint, _grp, "", (random 1), "SERGEANT"];

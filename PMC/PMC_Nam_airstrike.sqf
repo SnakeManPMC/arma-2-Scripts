@@ -61,11 +61,8 @@ _PMC_Airsupport =
 	_vcl = createVehicle [_MyVcl, _respawnpoint, [], 0, "FLY"];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"vte_acpilot" createUnit [_respawnpoint, _grp, "", 1, "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;

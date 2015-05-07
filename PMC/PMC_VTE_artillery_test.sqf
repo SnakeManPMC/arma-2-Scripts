@@ -20,11 +20,8 @@ private
 ];
 
 _grp = objNull;
-waitUntil
-{
-	_grp = createGroup (west);
-	!(isNull _grp);
-};
+_grp = createGroup west;
+waitUntil {!(isNull _grp)};
 
 _pos = getPos player;
 

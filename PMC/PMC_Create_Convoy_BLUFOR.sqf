@@ -25,11 +25,8 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 
 	_vcl = objNull;
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// first vehicle
 	_vcl = "M1A2_US_TUSK_MG_EP1" createVehicle _respawnpoint;

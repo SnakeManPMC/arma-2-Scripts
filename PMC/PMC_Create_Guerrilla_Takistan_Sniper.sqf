@@ -10,11 +10,8 @@ PMC_Create_Guerrilla_Takistan_Sniper =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (resistance);
-		!(isNull _grp);
-	};
+	_grp = createGroup resistance;
+	waitUntil {!(isNull _grp)};
 
 	"TK_GUE_Soldier_Sniper_EP1" createUnit [_respawnpoint, _grp, "", 0.46, "SERGEANT"];
 	"TK_GUE_Soldier_Sniper_EP1" createUnit [_respawnpoint, _grp, "", 0.46, "SERGEANT"];

@@ -10,11 +10,8 @@ PMC_Create_US_Army_Armor_M1A2_Platoon =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	_vcl = "M1A2_US_TUSK_MG_EP1" createVehicle _respawnpoint;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];

@@ -19,11 +19,8 @@ private ["_respawnpoint","_grp","_unit"];
 
 _respawnpoint = _this select 0;
 
-waitUntil
-{
-	_grp = createGroup (east);
-	!(isNull _grp);
-};
+_grp = createGroup east;
+waitUntil {!(isNull _grp)};
 
 // our VIP
 _unit = _grp createUnit ["TK_Aziz_EP1", _respawnpoint, [], 1, "FORM"];

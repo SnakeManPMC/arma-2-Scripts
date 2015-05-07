@@ -23,11 +23,8 @@ _PMC_CreateConvoyVehicles =
 
 	_vcl = objNull;
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// first vehicle
 	_vcl = "HMMWV_M998_crows_M2_DES_EP1" createVehicle _respawnpoint;

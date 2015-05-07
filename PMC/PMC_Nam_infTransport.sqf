@@ -36,12 +36,9 @@ publicVariable "PMC_InfTransport";
 
 _vcl = objNull;
 _HeloGrp = objNull;
+_HeloGrp = createGroup west;
+waitUntil {!(isNull _HeloGrp)};
 
-waitUntil
-{
-	_HeloGrp = createGroup (west);
-	!(isNull _HeloGrp);
-};
 // create huey, vte_uh1a is 12 seats, vte_uh1 is 9 seats :)
 _vcl = "VTE_uh1a" createVehicle _rtb;
 "VTE_acpilot" createUnit [_rtb, _HeloGrp, "", 1, "SERGEANT"];

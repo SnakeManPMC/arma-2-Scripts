@@ -14,11 +14,8 @@ private ["_grp","_myVec","_vcl","_respawnpoint"];
         _myVec = objNull;
 	_vcl = objNull;
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// first vehicle
 	_myVec = (PMC_blufor_vehicle_unarmed select round random (count PMC_blufor_vehicle_unarmed));

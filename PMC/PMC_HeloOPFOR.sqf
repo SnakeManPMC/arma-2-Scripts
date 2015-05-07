@@ -50,11 +50,8 @@ _PMC_MakeHeloOPFOR =
 	_myVec = (_helos select floor random (count _helos));
 	_vcl = _myVec createVehicle (getPos pmc_opfor_start_1);
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	"TK_Soldier_Pilot_EP1" createUnit [(getPos pmc_opfor_start_1), _grp, "", 1, "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;

@@ -10,11 +10,8 @@ PMC_Create_Takistani_Army_Mechanized_Recon_AT =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	_vcl = "BRDM2_ATGM_TK_EP1" createVehicle _respawnpoint;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];

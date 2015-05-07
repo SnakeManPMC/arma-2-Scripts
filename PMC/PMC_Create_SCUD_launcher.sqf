@@ -28,11 +28,8 @@ _respawnpoint = _this select 0;
 // distance between vehicles
 _offset = 75;
 
-waitUntil
-{
-	_grp = createGroup (east);
-	!(isNull _grp);
-};
+_grp = createGroup east;
+waitUntil {!(isNull _grp)};
 
 _vcl = "MAZ_543_SCUD_TK_EP1" createVehicle _respawnpoint;
 _vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];

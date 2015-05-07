@@ -10,11 +10,8 @@ PMC_Create_GER_Infantry_KSKTeam =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"GER_Soldier_TL_EP1" createUnit [_respawnpoint, _grp, "", 0.59, "SERGEANT"];
 	"GER_Soldier_MG_EP1" createUnit [_respawnpoint, _grp, "", 0.46, "CORPORAL"];

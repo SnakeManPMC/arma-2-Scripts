@@ -29,11 +29,8 @@ PMC_MakeSupportOPFOR =
 	];
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	// truck drivers	
 	"RU_Soldier" createUnit [_respawnpoint, _grp, "", random 1, "SERGEANT"];

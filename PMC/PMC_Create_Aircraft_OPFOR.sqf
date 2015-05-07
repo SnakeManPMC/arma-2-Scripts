@@ -31,11 +31,8 @@ PMC_Create_Aircraft_OPFOR =
 	_myVec = (["L39_TK_EP1", "Su25_TK_EP1"] select floor random 2);
 	_vcl = createVehicle [_myVec, _respawnpoint, [], 0, "FLY"];
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	"TK_Soldier_Pilot_EP1" createUnit [_respawnpoint, _grp, "", (random 1), "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;

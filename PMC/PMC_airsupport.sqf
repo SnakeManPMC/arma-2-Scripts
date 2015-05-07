@@ -51,11 +51,8 @@ _PMC_Airsupport_A10 =
         _vcl = createVehicle ["A10", _respawnpoint, [], 0, "FLY"];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"USMC_Soldier_Pilot" createUnit [_respawnpoint, _grp, "", 1, "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;
@@ -82,11 +79,8 @@ _PMC_Airsupport_AH1 =
 	_vcl2 addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"USMC_Soldier_Pilot" createUnit [_respawnpoint, _grp, "", 1, "SERGEANT"];
 	"USMC_Soldier_Pilot" createUnit [_respawnpoint, _grp, "", 1, "CORPORAL"];

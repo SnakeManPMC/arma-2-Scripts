@@ -27,11 +27,9 @@ _HeloGrp = objNull;
 
 if (_side == "West") then 
 {
-	waitUntil
-	{
-		_HeloGrp = createGroup (west);
-		!(isNull _HeloGrp);
-	};
+	_HeloGrp = createGroup west;
+	waitUntil {!(isNull _HeloGrp)};
+
 	_vcl = "UH60MG" createVehicle _respawnpoint;
 	"SoldierWPilot" createUnit [_respawnpoint, _HeloGrp, "", (random 1), "SERGEANT"];
 	"SoldierWPilot" createUnit [_respawnpoint, _HeloGrp, "", (random 1), "CORPORAL"];
@@ -44,11 +42,9 @@ if (_side == "West") then
 }
 else
 {
-	waitUntil
-	{
-		_HeloGrp = createGroup (east);
-		!(isNull _HeloGrp);
-	};
+	_HeloGrp = createGroup east;
+	waitUntil {!(isNull _HeloGrp)};
+
 	_vcl = "Mi17_mg" createVehicle _respawnpoint;
 	"SoldierEPilot" createUnit [_respawnpoint, _HeloGrp, "", (random 1), "SERGEANT"];
 	"SoldierEPilot" createUnit [_respawnpoint, _HeloGrp, "", (random 1), "CORPORAL"];

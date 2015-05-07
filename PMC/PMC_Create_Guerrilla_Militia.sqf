@@ -12,11 +12,8 @@ PMC_Create_Guerrilla_Militia =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (resistance);
-		!(isNull _grp);
-	};
+	_grp = createGroup resistance;
+	waitUntil {!(isNull _grp)};
 
 	"GUE_Worker2" createUnit [_respawnpoint, _grp, "", 0.46, "SERGEANT"];
 	"GUE_Woodlander3" createUnit [_respawnpoint, _grp, "", 0.33, "CORPORAL"];

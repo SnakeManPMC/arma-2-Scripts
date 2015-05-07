@@ -10,11 +10,8 @@ PMC_Create_USMC_Fire_Team_Support =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	// USMC Fire Team
 

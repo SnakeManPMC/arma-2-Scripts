@@ -10,11 +10,8 @@ PMC_Create_US_Army_Sniper =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (west);
-		!(isNull _grp);
-	};
+	_grp = createGroup west;
+	waitUntil {!(isNull _grp)};
 
 	"US_Soldier_Sniper_EP1" createUnit [_respawnpoint, _grp, "", 1, "LIEUTENANT"];
 	"US_Soldier_Spotter_EP1" createUnit [_respawnpoint, _grp, "", 1, "SERGEANT"];

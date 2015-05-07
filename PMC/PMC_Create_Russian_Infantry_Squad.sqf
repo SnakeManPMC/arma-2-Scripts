@@ -10,11 +10,8 @@ PMC_Create_Russian_Infantry_Squad =
 	_respawnpoint = _this select 0;
 
 	_grp = objNull;
-	waitUntil
-	{
-		_grp = createGroup (east);
-		!(isNull _grp);
-	};
+	_grp = createGroup east;
+	waitUntil {!(isNull _grp)};
 
 	// Russian rifle squad
 
