@@ -28,7 +28,7 @@ private
 // choose random posit for our site
 _r = (round random count PMC_targets);
 _t = (PMC_targets select _r);
-_tp = getPos _t;
+_tp = getPosASL _t;
 
 _grp = objNull;
 _grp = createGroup east;

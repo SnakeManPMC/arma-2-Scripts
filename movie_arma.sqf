@@ -211,13 +211,13 @@ while {true} do
 //	sleep 5;
 	[0, 5] call _PMC_Camera_Commit;
 
-	_camera camSetTarget getPos _doka;
+	_camera camSetTarget getPosASL _doka;
 	_camera camSetRelPos [-20 + random 40,-20 + random 40, random 5];
 //	_camera camCommit 5;
 //	waitUntil { camCommitted _camera; };
 //	sleep 3;
 	[5, 3] call _PMC_Camera_Commit;
-	_camera camSetTarget getpos _doka;
+	_camera camSetTarget getPosASL _doka;
 	_camera camSetRelPos [random 20, random 20, random 5];
 //	_camera camCommit 5;
 //	waitUntil { camCommitted _camera; };
@@ -232,7 +232,7 @@ while {true} do
 //	waitUntil { camCommitted _camera; };
 //	sleep 5;
 	[0, 5] call _PMC_Camera_Commit;
-	_camera camSetTarget getPos _doka;
+	_camera camSetTarget getPosASL _doka;
 	_camera camSetRelPos [-20 + random 40, -20 + random 40, random 5];
 //	_camera camCommit 5;
 //	waitUntil { camCommitted _camera; };

@@ -106,7 +106,7 @@ _PMC_Airsupport_AH1 =
 _targetpoint = _this select 0;
 
 // aircraft starting point
-_respawnpoint = getPos (_this select 1);
+_respawnpoint = getPosASL (_this select 1);
 
 // type of support
 _PMC_typeOfsupport = _this select 2;

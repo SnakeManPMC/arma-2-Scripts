@@ -26,6 +26,6 @@ _crewType = getText (configFile >> "CfgVehicles" >> (typeOf _vcl) >> "Crew");
 // check if have turrets, then creates gunners for them.
 for "_i" from 0 to ((count (configFile >> "CfgVehicles" >> (typeOf _vcl) >> "Turrets")) - 1) do
 {
-	_crewType createUnit [getPos leader _grp, _grp, "", 1, "CORPORAL"];
+	_crewType createUnit [getPosASL leader _grp, _grp, "", 1, "CORPORAL"];
 	(units _grp select (_i + 1)) moveinTurret [_vcl, [_i]];
 };

@@ -14,7 +14,7 @@ _p = call compile format["pmc_zone_%1",_a];
 PMC_zones = [];
 
 // loop until we have no gamelogics left, it then should return 0.
-while {((getPos _p) select 0) != 0} do
+while {((getPosASL _p) select 0) != 0} do
 {
 	// just make array out of the gamelogics
 	PMC_zones = PMC_zones + [_p];

@@ -143,7 +143,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 		// remove it from the temp array so it wont be chosen again.
 		_PMC_convoyBLUFORtargets = _PMC_convoyBLUFORtargets - [_tlogic];
 		// get its coordinates.
-		_targetpoint = getPos _tlogic;
+		_targetpoint = getPosASL _tlogic;
 		_ptNum = _ptNum - 1;
 		_wp = _wp + 1;
 

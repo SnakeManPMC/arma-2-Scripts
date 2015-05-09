@@ -2,7 +2,7 @@
 Binesi improved bis_fnc_taskdefend.sqf
 http://forums.bistudio.com/showthread.php?t=87129
 
-null = [group this,(getPos this)] execVM "BIN_taskDefend.sqf";
+null = [group this,(getPosASL this)] execVM "BIN_taskDefend.sqf";
 */
 
 /*
@@ -22,7 +22,7 @@ Returns:
 Boolean - success flag
 
 Example(s):
-null = [group this,(getPos this)] execVM "BIN_taskDefend.sqf"
+null = [group this,(getPosASL this)] execVM "BIN_taskDefend.sqf"
 
 -----------------------------------------------------------------------------------------------------------------------
 Notes:
@@ -86,7 +86,7 @@ _wp1 setWaypointType "MOVE";
         sleep (30+(random 60));
         {doStop _x} forEach units _grp;
         _grp setCurrentWaypoint [_grp,3];
-        {_x doMove getPos _x} forEach units _grp;
+        {_x doMove getPosASL _x} forEach units _grp;
         sleep 1;
         if ((random 3)> 2) then {sleep 3} else {sleep 30 + (random 30)};
         _grp setCurrentWaypoint [_grp, 1];

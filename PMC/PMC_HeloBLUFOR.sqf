@@ -51,12 +51,12 @@ _PMC_MakeHeloBLUFOR =
 
 	// change this to floor and see if it works ok?
 	_myVec = (_helos select floor random (count _helos));
-	_vcl = _myVec createVehicle (getPos pmc_blufor_start_1);
+	_vcl = _myVec createVehicle (getPosASL pmc_blufor_start_1);
 	_grp = objNull;
 	_grp = createGroup west;
 	waitUntil {!(isNull _grp)};
 
-	"US_Soldier_Pilot_EP1" createUnit [(getPos pmc_blufor_start_1), _grp, "", 1, "SERGEANT"];
+	"US_Soldier_Pilot_EP1" createUnit [(getPosASL pmc_blufor_start_1), _grp, "", 1, "SERGEANT"];
 	(units _grp select 0) moveInDriver _vcl;
 
 	// create helo crew
@@ -105,7 +105,7 @@ PMC_helo_blufor = 0;
 while {PMC_helo_blufor_running} do
 {
 	//_ran = (floor random (count PMC_targets));
-	//_targetpoint = getPos (PMC_targets select _ran);
+	//_targetpoint = getPosASL (PMC_targets select _ran);
 	_targetpoint = call PMC_Select_Target;
 
 	_vcl = [_targetpoint] call _PMC_MakeHeloBLUFOR;

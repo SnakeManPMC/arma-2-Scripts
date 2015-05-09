@@ -23,7 +23,7 @@ _grp = objNull;
 _grp = createGroup west;
 waitUntil {!(isNull _grp)};
 
-_pos = getPos player;
+_pos = getPosASL player;
 
 _vcl = "VTE_m3" createVehicle _pos;
 "VTE_Armysoldier" createUnit [_pos, _grp, "", 1, "SERGEANT"];

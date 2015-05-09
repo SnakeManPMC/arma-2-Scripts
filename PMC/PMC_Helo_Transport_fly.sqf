@@ -33,7 +33,7 @@ _tmp = _this select 0;
 _Helo = _this select 1;
 _grp = _this select 2;
 _homebase = _this select 3;
-_lz = getPos _tmp;
+_lz = getPosASL _tmp;
 
 _Helo setbehaviour "AWARE";
 _Helo setcombatmode "YELLOW";
@@ -61,13 +61,13 @@ if (!canMove _helo) exitWith{};
 waitUntil
 {
 	sleep 2;
-	(((getPos _Helo select 2) < 3 ) || (!canMove _Helo));
+	(((getPosASL _Helo select 2) < 3 ) || (!canMove _Helo));
 };
 
 if (!canMove _helo) exitWith{};
 
 // helo returns to base.
-_Helo move getPos _homebase;
+_Helo move getPosASL _homebase;
 
 waitUntil
 {
@@ -82,7 +82,7 @@ _Helo land "land";
 waitUntil
 {
 	sleep 1;
-	((getPos _Helo select 2) < 2 ) || (!canMove _Helo);
+	((getPosASL _Helo select 2) < 2 ) || (!canMove _Helo);
 };
 
 if (!canMove _helo) exitWith{};

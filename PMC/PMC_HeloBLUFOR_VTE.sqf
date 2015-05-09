@@ -88,14 +88,14 @@ _PMC_MakeHeloBLUFOR =
 };
 
 _targetNum = count PMC_targets;
-_respawnpoint = getPos CV_helopad;
+_respawnpoint = getPosASL CV_helopad;
 
 // never ending loop to create units
 while {true} do
 {
 	_ran = (floor random _targetNum);
 	_tlogic = (PMC_targets select _ran);
-	_targetpoint = getPos _tlogic;
+	_targetpoint = getPosASL _tlogic;
 
 	[] call _PMC_MakeHeloBLUFOR;
 

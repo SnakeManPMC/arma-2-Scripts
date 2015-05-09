@@ -6,7 +6,7 @@ private
 	"_PMC_MakeGuardInfAirCav"
 ];
 
-_respawnpoint = getPos (_this select 0);
+_respawnpoint = getPosASL (_this select 0);
 
 _PMC_MakeGuardInfAirCav =
 {

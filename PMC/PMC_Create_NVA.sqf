@@ -20,7 +20,7 @@ private
 	"_waypointRanPosit"
 ];
 
-_respawnpoint = getPos (_this select 0);
+_respawnpoint = getPosASL (_this select 0);
 _targetpoint = _respawnpoint;
 _waypointRanPosit = 100;
 

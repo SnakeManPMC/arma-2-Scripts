@@ -33,7 +33,7 @@ PMC_Patrol_Inf_Targets_Waypoints =
 	];
 	_grp = _this select 0;
 	_waypointRanPosit = _this select 1;
-	_respawnpoint = getPos leader _grp;
+	_respawnpoint = getPosASL leader _grp;
 
 	{
 		_x addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
@@ -57,7 +57,7 @@ PMC_Patrol_Inf_Targets_Waypoints =
 		_ran = (floor random (count _PMC_temp_targets));
 		_tlogic = (_PMC_temp_targets select _ran);
 		_PMC_temp_targets = _PMC_temp_targets - [_tlogic];
-		_targetpoint = getPos _tlogic;
+		_targetpoint = getPosASL _tlogic;
 		_wp = _wp + 1;
 
 //diag_log format["_grp: %1, _PMC_temp_targets: %2, _wp: %3", _grp, _tlogic, _wp];

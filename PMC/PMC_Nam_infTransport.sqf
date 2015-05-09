@@ -27,8 +27,8 @@ private
 ];
 
 _grp = _this select 0;
-_rtb = getPos (_this select 1);
-_landingzone = getPos (_this select 2);
+_rtb = getPosASL (_this select 1);
+_landingzone = getPosASL (_this select 2);
 
 // we increment our count for transports active.
 PMC_InfTransport = PMC_InfTransport + 1;
@@ -101,7 +101,7 @@ if (!alive _vcl || !alive leader _HeloGrp) exitWith
 	// we decrease our count for transports active.
 	PMC_InfTransport = PMC_InfTransport - 1;
 	publicVariable "PMC_InfTransport";
-	diag_log format ["Nam_InfTransport %1 has exited with catastrophic failure. alive _vcl: %2, alive leader _HeloGrp: %3, posit: %4", _HeloGrp, alive _vcl, alive leader _HeloGrp, getPos _vcl];
+	diag_log format ["Nam_InfTransport %1 has exited with catastrophic failure. alive _vcl: %2, alive leader _HeloGrp: %3, posit: %4", _HeloGrp, alive _vcl, alive leader _HeloGrp, getPosASL _vcl];
 };
 
 // helo vehicle and the group leader is alive, put some radio traffic.
@@ -136,7 +136,7 @@ diag_log format ["Nam_InfTransport %1, RTB check. unitReady: %2, rtb dist: %3, c
 // if she arrived, if shes ok, then just delete her and her crew.
 if (alive _vcl && alive leader _HeloGrp) then
 {
-	diag_log format ["Nam_InfTransport(%1) %2 has exited with (ALL OK) alive _vcl: %3, alive leader _HeloGrp: %4. POSIT: %5, _rtb: %6", PMC_InfTransport, _HeloGrp, alive _vcl, alive leader _HeloGrp, getPos _vcl, _rtb];
+	diag_log format ["Nam_InfTransport(%1) %2 has exited with (ALL OK) alive _vcl: %3, alive leader _HeloGrp: %4. POSIT: %5, _rtb: %6", PMC_InfTransport, _HeloGrp, alive _vcl, alive leader _HeloGrp, getPosASL _vcl, _rtb];
 	{
 		deleteVehicle _x;
 	} forEach units _HeloGrp;
@@ -151,7 +151,7 @@ if (alive _vcl && alive leader _HeloGrp) then
 }
 else
 {
-	diag_log format ["Nam_InfTransport(%1) %2 has exited with (NOT OK) alive _vcl: %3, alive leader _HeloGrp: %4. POSIT: %5, _rtb: %6", PMC_InfTransport, _HeloGrp, alive _vcl, alive leader _HeloGrp, getPos _vcl, _rtb];
+	diag_log format ["Nam_InfTransport(%1) %2 has exited with (NOT OK) alive _vcl: %3, alive leader _HeloGrp: %4. POSIT: %5, _rtb: %6", PMC_InfTransport, _HeloGrp, alive _vcl, alive leader _HeloGrp, getPosASL _vcl, _rtb];
 };
 
 // we decrease our count for transports active.

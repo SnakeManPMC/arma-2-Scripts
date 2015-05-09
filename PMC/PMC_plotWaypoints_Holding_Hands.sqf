@@ -6,7 +6,7 @@ private ["_lastWaypoint","_ActStep","_posX","_posY","_vcl","_targetpoint","_star
 _vcl = _this select 0;
 _targetpoint = _this select 1;
 
-_startingPoint = getPos _vcl;
+_startingPoint = getPosASL _vcl;
 _maxDistance = 4000;
 
 // how many meters is the minimum needed to start plot waypoints
@@ -50,4 +50,4 @@ while { (_ActStep < _SubSteps) && (canMove _vcl && alive _vcl) } do
 	waitUntil { sleep 1; (unitReady _vcl || !canMove _vcl || !alive _vcl); };
 };
 
-if (PMC_debug) then { diag_log format["PMC_plotWaypoints exited, alive _vcl: %1, canMove: %2, pos: %3, dist to target: %4", alive _vcl, canMove _vcl, (getPos _vcl), (getPos _vcl distance _targetpoint)]; };
+if (PMC_debug) then { diag_log format["PMC_plotWaypoints exited, alive _vcl: %1, canMove: %2, pos: %3, dist to target: %4", alive _vcl, canMove _vcl, (getPosASL _vcl), (getPosASL _vcl distance _targetpoint)]; };

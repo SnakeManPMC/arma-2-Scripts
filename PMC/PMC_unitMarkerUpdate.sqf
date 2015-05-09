@@ -32,7 +32,7 @@ PMC_unitMarker = PMC_unitMarker + 1;
 publicVariable "PMC_unitMarker";
 
 _m = format ["PMC_group_marker_%1", PMC_unitMarker];
-_markerobj = createMarkerLocal [_m, getPos _dude];
+_markerobj = createMarkerLocal [_m, getPosASL _dude];
 _markerobj setMarkerTypeLocal "mil_dot";
 
 switch (side _dude) do
@@ -52,7 +52,7 @@ switch (side _dude) do
 
 while {alive _dude} do
 {
-	_markerobj setMarkerPosLocal (getPos _dude);
+	_markerobj setMarkerPosLocal (getPosASL _dude);
 	sleep 1;
 };
 

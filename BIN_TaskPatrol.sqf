@@ -18,8 +18,8 @@ Returns:
 Boolean - success flag
 
 Example(s):
-null = [group this,(getPos this),250] execVM "BIN_taskPatrol.sqf"
-null = [group this,(getPos this),250,1] execVM "BIN_taskPatrol.sqf" // Same with debug markers
+null = [group this,(getPosASL this),250] execVM "BIN_taskPatrol.sqf"
+null = [group this,(getPosASL this),250,1] execVM "BIN_taskPatrol.sqf" // Same with debug markers
 
 -----------------------------------------------------------------------------------------------------------------------
 Notes: Wolffy.au

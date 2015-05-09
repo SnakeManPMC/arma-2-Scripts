@@ -79,7 +79,7 @@ while {true} do
 	sleep 10 + random 8;
 };
 
-_camera camSetTarget getPos player;
+_camera camSetTarget getPosASL player;
 _camera camSetRelPos [-200 + random 400, -200 + random 400, 0.2 + random 20.8];
 _camera camCommit 30;
 waitUntil { camCommitted _camera; };

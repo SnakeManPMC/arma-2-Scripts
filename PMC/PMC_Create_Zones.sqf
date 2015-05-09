@@ -33,7 +33,7 @@ _triggerTimeout = _this select 1;
 while { _a < (count PMC_zones) } do
 {
 	_tlogic = (_PMC_t select _a);
-	_targetpoint = getPos _tlogic;
+	_targetpoint = getPosASL _tlogic;
 
 // marker zone area
 	_m = format ["PMC_zone_%1", _a];

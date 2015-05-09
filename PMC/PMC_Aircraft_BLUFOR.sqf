@@ -50,7 +50,7 @@ _PMC_Aircraft_BLUFOR =
 
 	// change this to floor and see if it works ok?
 	_myVec = (_helos select floor random (count _helos));
-//	_vcl = _myVec createVehicle (getPos pmc_blufor_start_1);
+//	_vcl = _myVec createVehicle (getPosASL pmc_blufor_start_1);
 	_vcl = createVehicle [_myVec, _startPos, [], 0, "FLY"];
 	_grp = objNull;
 	_grp = createGroup west;

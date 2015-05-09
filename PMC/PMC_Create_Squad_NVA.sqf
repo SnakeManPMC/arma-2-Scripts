@@ -22,7 +22,7 @@ PMC_Create_Squad_NVA =
 		"_respawnpoint"
 	];
 	
-	_respawnpoint = getPos (_this select 0);
+	_respawnpoint = getPosASL (_this select 0);
 	
 	_grp = objNull;
 	_grp = createGroup east;

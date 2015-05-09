@@ -76,6 +76,6 @@ PMC_vips = PMC_vips + [leader _grp];
 // debug
 if (PMC_debug) then
 {
-	diag_log format["VIP %1 created to %2", leader _grp, (getPos leader _grp)];
-	[(getPos leader _grp)] call compile preprocessFileLineNumbers "PMC\PMC_Create_Marker.sqf";
+	diag_log format["VIP %1 created to %2", leader _grp, (getPosASL leader _grp)];
+	[(getPosASL leader _grp)] call compile preprocessFileLineNumbers "PMC\PMC_Create_Marker.sqf";
 };

@@ -87,7 +87,7 @@ _PMC_CreateConvoyVehicles =
 		// remove it from the temp array so it wont be chosen again.
 		_PMC_convoyOPFORtargets = _PMC_convoyOPFORtargets - [_tlogic];
 		// get its coordinates.
-		_targetpoint = getPos _tlogic;
+		_targetpoint = getPosASL _tlogic;
 		_ptNum = _ptNum - 1;
 		_wp = _wp + 1;
 
@@ -123,7 +123,7 @@ _PMC_SelectStartPosit =
 private ["_ran","_tlogic","_respawnpoint"];
 _ran = (floor random (count PMC_OPFOR_starts));
 	_tlogic = (PMC_OPFOR_starts select _ran);
-	_respawnpoint = getPos _tlogic;
+	_respawnpoint = getPosASL _tlogic;
 
 	// location, returned from this function
 	_respawnpoint

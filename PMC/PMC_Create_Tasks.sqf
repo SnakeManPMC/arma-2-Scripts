@@ -33,7 +33,7 @@ _triggerTimeout = 60;
 
 if (!PMC_target2) then
 {
-	_targetpoint = getPos (PMC_Objectives_Array select 1);
+	_targetpoint = getPosASL (PMC_Objectives_Array select 1);
 
 	_z = createTrigger ["EmptyDetector", _targetpoint];
 // trigger setTriggerActivation [by, type, repeating]
@@ -58,7 +58,7 @@ if (!PMC_target2) then
 // objective 2 has been completed!
 else
 {
-	_targetpoint = getPos (PMC_Objectives_Array select 1);
+	_targetpoint = getPosASL (PMC_Objectives_Array select 1);
 	_markerobj = createMarkerLocal ["pmc_target2", _targetpoint];
 	_markerobj setMarkerShapeLocal "dot";
 	_markerobj setMarkerColorLocal "ColorGreen";
@@ -76,7 +76,7 @@ else
 
 if (!PMC_target1) then
 {
-	_targetpoint = getPos (PMC_Objectives_Array select 0);
+	_targetpoint = getPosASL (PMC_Objectives_Array select 0);
 
 	_z = createTrigger ["EmptyDetector", _targetpoint];
 	_z setTriggerActivation ["WEST SEIZED", "PRESENT", false];
@@ -100,7 +100,7 @@ if (!PMC_target1) then
 // objective 1 has been completed!
 else
 {
-	_targetpoint = getPos (PMC_Objectives_Array select 0);
+	_targetpoint = getPosASL (PMC_Objectives_Array select 0);
 	_markerobj = createMarkerLocal ["pmc_target1", _targetpoint];
 	_markerobj setMarkerShapeLocal "dot";
 	_markerobj setMarkerColorLocal "ColorGreen";

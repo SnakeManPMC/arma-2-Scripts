@@ -89,5 +89,5 @@ if match found, then copy the pmc_? gamelogic name into our friendly array.
 [] call _PMC_SearchForBLUFORCitys;
 
 //hintc format["blufor cities for resupply trucks: %1", _PMC_friendly_city_array];
-_respawnpoint = getPos PMC_targets select 0;
+_respawnpoint = getPosASL PMC_targets select 0;
 [_respawnpoint] call _PMC_CreateSupplyVehicles;

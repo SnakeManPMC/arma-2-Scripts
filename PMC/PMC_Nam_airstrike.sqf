@@ -86,8 +86,8 @@ _PMC_Airsupport =
 
 //_respawnpoint = _this select 1;
 //_targetpoint = _this select 2;
-_respawnpoint = getPos _this select 0;
-_targetpoint = getPos _this select 1;
+_respawnpoint = getPosASL _this select 0;
+_targetpoint = getPosASL _this select 1;
 
 while {true} do
 {

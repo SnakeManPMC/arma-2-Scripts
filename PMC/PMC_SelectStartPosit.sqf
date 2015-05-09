@@ -44,7 +44,7 @@ PMC_SelectStartPosit =
 		_tlogic = (PMC_OPFOR_starts select _ran);
 	};
 
-	_respawnpoint = [(getPos _tlogic select 0) - 50 + random 100, (getPos _tlogic select 1) - 50 + random 100, 0];
+	_respawnpoint = [(getPosASL _tlogic select 0) - 50 + random 100, (getPosASL _tlogic select 1) - 50 + random 100, 0];
 
 //hintc format["At PMC_SelectStartPosit.sqf\n\n_OurSide: %1\n_ran: %2\n_tlogic: %3\n_respawnpoint: %4", _OurSide, _ran, _tlogic, _respawnpoint];
 
