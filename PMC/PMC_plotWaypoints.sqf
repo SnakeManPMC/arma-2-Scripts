@@ -59,7 +59,7 @@ _Ystart = _startingPoint select 1;
 
 // umm this tries to make the substeps little less, 
 // but still dynamic according to the distance to travel.
-_SubSteps = floor (_startingPoint distance _targetpoint / _maxDistance);
+_SubSteps = floor ( (_startingPoint distance _targetpoint) / _maxDistance );
 
 _dX = _Xend - _Xstart;
 _dY = _Yend - _Ystart;
