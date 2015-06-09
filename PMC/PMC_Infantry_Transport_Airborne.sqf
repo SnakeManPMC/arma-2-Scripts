@@ -35,7 +35,6 @@ publicVariable "PMC_InfTransport";
 
 _vcl = objNull;
 _HeloGrp = objNull;
-
 _HeloGrp = createGroup west;
 waitUntil {!(isNull _HeloGrp)};
 
