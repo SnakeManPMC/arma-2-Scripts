@@ -1,14 +1,24 @@
 /*
 
-PMC OPFOR convoy script, modified from PMC Real War into VTE gook use.
+	PMC VTE Gook Convoy script, modified from PMC Real War into VTE gook use.
+
+Syntax:
+[] execVM "PMC\PMC_VTE_gook_convoy.sqf";
+
+Requires:
+PMC_targets[] array
+PMC\PMC_killed.sqf
+
+Returns:
+-
 
 */
 
-private ["_grp","_PMC_CreateConvoyVehicles","_respawnpoint","_PMC_SelectStartPosit"];
+private ["_grp","_PMC_CreateVTEConvoyVehicles","_respawnpoint","_PMC_SelectStartPosit"];
 
-_PMC_CreateConvoyVehicles =
+_PMC_CreateVTEConvoyVehicles =
 {
-        private ["_grp","_ran","_tlogic","_PMC_convoyOPFORtargets","_targetpoint","_ptNum","_wp","_vcl","_respawnpoint","_crewClass"];
+        private ["_grp","_ran","_tlogic","_PMC_convoyVTEOPFORtargets","_targetpoint","_ptNum","_wp","_vcl","_respawnpoint","_crewClass"];
         
         _respawnpoint = _this select 0;
         
@@ -74,18 +84,18 @@ _PMC_CreateConvoyVehicles =
 
 	// selecting the waypoint locations
 	_ptNum = count PMC_targets;
-	_PMC_convoyOPFORtargets = [];
-	_PMC_convoyOPFORtargets = PMC_targets;
+	_PMC_convoyVTEOPFORtargets = [];
+	_PMC_convoyVTEOPFORtargets = PMC_targets;
 
 	// do the random patrolling waypoints
 	_wp = 0;
-	while {count _PMC_convoyOPFORtargets > 0} do
+	while {count _PMC_convoyVTEOPFORtargets > 0} do
 	{
 		// choose random target.
 		_ran = (floor random _ptNum);
-		_tlogic = (_PMC_convoyOPFORtargets select _ran);
+		_tlogic = (_PMC_convoyVTEOPFORtargets select _ran);
 		// remove it from the temp array so it wont be chosen again.
-		_PMC_convoyOPFORtargets = _PMC_convoyOPFORtargets - [_tlogic];
+		_PMC_convoyVTEOPFORtargets = _PMC_convoyVTEOPFORtargets - [_tlogic];
 		// get its coordinates.
 		_targetpoint = getPosASL _tlogic;
 		_ptNum = _ptNum - 1;
@@ -119,9 +129,8 @@ _PMC_CreateConvoyVehicles =
 _PMC_SelectStartPosit =
 {
 	// select one starting point
-	
-private ["_ran","_tlogic","_respawnpoint"];
-_ran = (floor random (count PMC_OPFOR_starts));
+	private ["_ran","_tlogic","_respawnpoint"];
+	_ran = (floor random (count PMC_OPFOR_starts));
 	_tlogic = (PMC_OPFOR_starts select _ran);
 	_respawnpoint = getPosASL _tlogic;
 
@@ -140,7 +149,7 @@ while {true} do
 	// choose one of the random starting locations
 	_respawnpoint = [] call _PMC_SelectStartPosit;
 
-	_grp = [_respawnpoint] call _PMC_CreateConvoyVehicles;
+	_grp = [_respawnpoint] call _PMC_CreateVTEConvoyVehicles;
 
 	sleep 10;
 	// we wait until the convoy group is completely dead.
