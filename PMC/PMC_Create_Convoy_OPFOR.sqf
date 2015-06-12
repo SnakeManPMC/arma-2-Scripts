@@ -1,9 +1,9 @@
 /*
 
-	PMC Create Convoy BLUFOR
+	PMC Create Convoy OPFOR
 
 Syntax:
-[respawnpoint] execVM "PMC\PMC_Create_Convoy_BLUFOR";
+[respawnpoint] execVM "PMC\PMC_Create_Convoy_OPFOR";
 
 Requires:
 PMC\PMC_killed.sqf
@@ -13,23 +13,23 @@ Returns:
 
 */
 
-//PMC_Create_Convoy_BLUFOR.sqf
+//PMC_Create_Convoy_OPFOR.sqf
 
 
-private ["_grp","_PMC_CreateConvoyBLUFORVehicles","_respawnpoint"];
+private ["_grp","_PMC_CreateConvoyOPFORVehicles","_respawnpoint"];
 
-_PMC_CreateConvoyBLUFORVehicles =
+_PMC_CreateConvoyOPFORVehicles =
 {
-private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptNum","_wp","_vcl","_respawnpoint","_crewType"];
+	private ["_grp","_wp","_vcl","_respawnpoint","_crewType","_ran","_targetpoint"];
 	_respawnpoint = _this select 0;
 
 	_vcl = objNull;
 	_grp = objNull;
-	_grp = createGroup west;
+	_grp = createGroup east;
 	waitUntil {!(isNull _grp)};
 
 	// first vehicle
-	_vcl = "M1A2_US_TUSK_MG_EP1" createVehicle _respawnpoint;
+	_vcl = "T72_TK_EP1" createVehicle _respawnpoint;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -43,7 +43,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	(units _grp select 2) moveInDriver _vcl;
 
 	// second vehicle
-	_vcl = "M2A2_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-40];
+	_vcl = "BMP2_TK_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-40];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -58,7 +58,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 
 	// third vehicle
 // AMMO
-	_vcl = "MtvrReammo_DES_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-80];
+	_vcl = "UralReammo_TK_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-80];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -71,7 +71,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 
 	// fourth vehicle
 // FUEL
-	_vcl = "MtvrRefuel_DES_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-120];
+	_vcl = "UralRefuel_TK_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-120];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -83,7 +83,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	(units _grp select 9) moveInCargo _vcl;
 
 	// fifth vehicle (important vehicle with gunner)
-	_vcl = "HMMWV_M998_crows_M2_DES_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-160];
+	_vcl = "UAZ_MG_TK_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-160];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -95,7 +95,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	(units _grp select 11) moveInGunner _vcl;
 
 	// sixth vehicle
-	_vcl = "HMMWV_Ambulance_DES_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-200];
+	_vcl = "M113Ambul_TK_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-200];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -107,7 +107,7 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	(units _grp select 13) moveInCargo _vcl;
 
 	// seventh vehicle (important vehicle with gunner)
-	_vcl = "MTVR_DES_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-240];
+	_vcl = "LandRover_SPG9_TK_EP1" createVehicle [(_respawnpoint select 0),(_respawnpoint select 1)-240];
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -116,10 +116,10 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	_crewType createUnit [_respawnpoint, _grp, "", (random 1), "PRIVATE"];
 	_crewType createUnit [_respawnpoint, _grp, "", (random 1), "PRIVATE"];
 	(units _grp select 14) moveInDriver _vcl;
-	(units _grp select 15) moveInCargo _vcl;
+	(units _grp select 15) moveInGunner _vcl;
 
 	// eight, trailing vehicle (lets make it heavy)
-	_vcl = "M2A3_EP1" createVehicle _respawnpoint;
+	_vcl = "T55_TK_EP1" createVehicle _respawnpoint;
 	_vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 
 	// get crew type for this vehicle
@@ -133,8 +133,8 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	(units _grp select 18) moveInDriver _vcl;
 
 	// increment the created units count
-	PMC_blufor = PMC_blufor + 19;
-	publicVariable "PMC_blufor";
+	PMC_opfor = PMC_opfor + 19;
+	publicVariable "PMC_opfor";
 
 	// these to function somehow nicely, please :(
 	{
@@ -147,23 +147,14 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 	_grp setSpeedMode "NORMAL";
 	_grp setBehaviour "SAFE";
 
-	// selecting the waypoint locations
-	_ptNum = count PMC_targets;
-	_PMC_convoyBLUFORtargets = [];
-	_PMC_convoyBLUFORtargets = PMC_targets;
-
 	// do the random patrolling waypoints
 	_wp = 0;
-	while {count _PMC_convoyBLUFORtargets > 0} do
+	while {_wp < 20} do
 	{
 		// choose random target.
-		_ran = (floor random _ptNum);
-		_tlogic = (_PMC_convoyBLUFORtargets select _ran);
+		_ran = (floor random count PMC_loc);
+		_targetpoint = (PMC_loc select _ran);
 		// remove it from the temp array so it wont be chosen again.
-		_PMC_convoyBLUFORtargets = _PMC_convoyBLUFORtargets - [_tlogic];
-		// get its coordinates.
-		_targetpoint = getPosASL _tlogic;
-		_ptNum = _ptNum - 1;
 		_wp = _wp + 1;
 
 		// add waypoint to this target.
@@ -192,10 +183,9 @@ private ["_grp","_ran","_tlogic","_PMC_convoyBLUFORtargets","_targetpoint","_ptN
 
 _respawnpoint = _this select 0;
 
-// loop until our war is over from PMC_war_blufor.sqf
-while {PMC_war_blufor} do
+while {true} do
 {
-	_grp = [_respawnpoint] call _PMC_CreateConvoyBLUFORVehicles;
+	_grp = [_respawnpoint] call _PMC_CreateConvoyOPFORVehicles;
 
 	sleep 10;
 	// we wait until the convoy group is completely dead.
