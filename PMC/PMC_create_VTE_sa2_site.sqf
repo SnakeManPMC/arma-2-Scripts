@@ -6,7 +6,7 @@
 Pick the position randomly from out PMC_targets gamelogic's array
 
 Syntax:
-[] execVM "PMC\PMC_create_sam_site.sqf";
+[] execVM "PMC\PMC_create_VTE_sa2_site.sqf";
 
 Requires:
 PMC_targets[] array with the gamelogics info.
