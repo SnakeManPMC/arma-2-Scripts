@@ -1,3 +1,18 @@
+/*
+
+	Killed body / corpses array which get filled from PMC_killed.sqf
+	Run this on server
+
+Syntax:
+[number_of_corpses] execVM "PMC\PMC_corpses.sqf";
+
+Requires:
+PMC\PMC_killed.sqf
+
+Returns:
+-
+
+*/
 
 private
 [
