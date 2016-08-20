@@ -134,7 +134,7 @@ diag_log format["PMC_Aircraft_BLUFOR: _vcl: %1, PMC_blufor: %2, PMC_grp_blufor: 
 		// he cant move
 		// he cant fire (but what if he has no weapons like MH6?)
 		// and fps is high enough
-		((!alive _vcl || !canMove _vcl || !canFire _vcl) && (fps_diag > 15));
+		((!alive _vcl || !canMove _vcl || !canFire _vcl) && (diag_fps > 15));
 	};
 };
 
