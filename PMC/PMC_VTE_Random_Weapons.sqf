@@ -389,27 +389,27 @@ _PMC_Random_Rifle =
 
 		case 30:
 	    	{
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
 			_u addWeapon "VTE_ak47";
 		};
 
 		case 31:
 	    	{
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
-			_u addMagazine "VTE_30Rnd_762x43_AK";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
+			_u addMagazine "VTE_30Rnd_762x39_AK47";
 			_u addWeapon "VTE_type56";
 		};
 
