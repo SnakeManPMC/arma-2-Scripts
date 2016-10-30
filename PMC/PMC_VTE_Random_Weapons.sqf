@@ -209,7 +209,7 @@ _PMC_Random_Rifle =
 			_u addMagazine "VTE_FlareGreen_Rifle";
 			_u addMagazine "VTE_FlareRed_Rifle";
 			_u addMagazine "VTE_FlareYellow_Rifle";
-			_u addMagazine "VTE_MarkerRound";
+			_u addMagazine "VTE_MarkerRound_white";
 			_u addWeapon "VTE_car15gl";
 			// set pistol to false because we use pistol mag slots
 			// for the flare grenades.
