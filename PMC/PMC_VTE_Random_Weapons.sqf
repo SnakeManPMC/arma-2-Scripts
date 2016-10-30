@@ -204,7 +204,7 @@ _PMC_Random_Rifle =
 			_u addMagazine "VTE_20Rnd_556x45_Stanag";
 			_u addMagazine "VTE_40mm_AmmoBag";
 			_u addMagazine "VTE_40mm_HE";
-			_u addMagazine "VTE_40mm_Buckshot";
+			_u addMagazine "VTE_1Rnd_40mm_buckshot";
 			_u addMagazine "VTE_FlareWhite_Rifle";
 			_u addMagazine "VTE_FlareGreen_Rifle";
 			_u addMagazine "VTE_FlareRed_Rifle";
@@ -246,7 +246,7 @@ _PMC_Random_Rifle =
 	    	{
 			_u addMagazine "VTE_40mm_AmmoBag";
 			_u addMagazine "VTE_40mm_HE";
-			_u addMagazine "VTE_40mm_Buckshot";
+			_u addMagazine "VTE_1Rnd_40mm_buckshot";
 			_u addWeapon "VTE_m79";
 		};
 
@@ -254,7 +254,7 @@ _PMC_Random_Rifle =
 	    	{
 			_u addMagazine "VTE_40mm_AmmoBag";
 			_u addMagazine "VTE_40mm_HE";
-			_u addMagazine "VTE_40mm_Buckshot";
+			_u addMagazine "VTE_1Rnd_40mm_buckshot";
 			_u addWeapon "VTE_ex41";
 		};
 
@@ -768,7 +768,7 @@ VTE_car15gl
 VTE_20Rnd_556x45_Stanag
 VTE_40mm_AmmoBag
 VTE_40mm_HE
-VTE_40mm_Buckshot
+VTE_1Rnd_40mm_buckshot
 VTE_FlareWhite_Rifle
 VTE_FlareGreen_Rifle
 VTE_FlareRed_Rifle
@@ -785,12 +785,12 @@ VTE_5Rnd_762x51_nato
 VTE_m79
 VTE_40mm_AmmoBag
 VTE_40mm_HE
-VTE_40mm_Buckshot"
+VTE_1Rnd_40mm_buckshot"
 
 VTE_ex41
 VTE_40mm_AmmoBag
 VTE_40mm_HE
-VTE_40mm_Buckshot"
+VTE_1Rnd_40mm_buckshot"
 
 VTE_stoner_ar
 VTE_20Rnd_556x45_Stanag
