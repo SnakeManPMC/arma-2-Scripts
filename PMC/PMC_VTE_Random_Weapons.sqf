@@ -22,75 +22,75 @@ _PMC_Random_Rifle =
 	{
 		case 0:
 	    	{
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
-			_u addMagazine "VTE_20Rnd_762x63_Stanag";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
+			_u addMagazine "VTE_20Rnd_762x63";
 			_u addWeapon "VTE_bar";
 		};
 
 		case 1:
 	    	{
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
 			_u addWeapon "VTE_uzi";
 		};
 
 		case 2:
 	    	{
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_sten";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18";
 			_u addWeapon "VTE_sten";
 		};
 
 		case 3:
 	    	{
-			_u addMagazine "VTE_32Rnd_stensd";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_stensd";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_stensd";
-			_u addMagazine "VTE_32Rnd_sten";
-			_u addMagazine "VTE_32Rnd_stensd";
-			_u addMagazine "VTE_32Rnd_sten";
+			_u addMagazine "VTE_32Rnd_9x18_sd";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18_sd";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18_sd";
+			_u addMagazine "VTE_32Rnd_9x18";
+			_u addMagazine "VTE_32Rnd_9x18_sd";
+			_u addMagazine "VTE_32Rnd_9x18";
 			_u addWeapon "VTE_stensd";
 		};
 
 		case 4:
 	    	{
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
-			_u addMagazine "VTE_36Rnd_M45";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
+			_u addMagazine "VTE_36Rnd_9x19";
 			_u addWeapon "VTE_m45";
 		};
 
 		case 5:
 	    	{
 			_u addMagazine "VTE_30Rnd_45ACP";
-			_u addMagazine "VTE_100Rnd_45ACP_Drum";
+			_u addMagazine "VTE_100Rnd_45ACP";
 			_u addMagazine "VTE_30Rnd_45ACP";
-			_u addMagazine "VTE_100Rnd_45ACP_Drum";
+			_u addMagazine "VTE_100Rnd_45ACP";
 			_u addWeapon "VTE_thompson";
 		};
 
@@ -122,14 +122,14 @@ _PMC_Random_Rifle =
 
 		case 8:
 	    	{
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
-			_u addMagazine "VTE_32Rnd_uzi";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
+			_u addMagazine "VTE_32Rnd_9x19";
 			_u addWeapon "VTE_mp40";
 		};
 
@@ -161,49 +161,49 @@ _PMC_Random_Rifle =
 
 		case 11:
 	    	{
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
 			_u addWeapon "VTE_ar15";
 		};
 
 		case 12:
 	    	{
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
 			_u addWeapon "VTE_xm177e";
 		};
 
 		case 13:
 	    	{
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
 			_u addWeapon "VTE_m16a1";
 		};
 
 		case 14:
 	    	{
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_40mm_AmmoBag";
-			_u addMagazine "VTE_40mm_HE";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_30Rnd_40mm_AmmoBag";
+			_u addMagazine "VTE_1Rnd_40mm_HE";
 			_u addMagazine "VTE_1Rnd_40mm_buckshot";
 			_u addMagazine "VTE_FlareWhite_Rifle";
 			_u addMagazine "VTE_FlareGreen_Rifle";
@@ -244,39 +244,39 @@ _PMC_Random_Rifle =
 
 		case 17:
 	    	{
-			_u addMagazine "VTE_40mm_AmmoBag";
-			_u addMagazine "VTE_40mm_HE";
+			_u addMagazine "VTE_30Rnd_40mm_AmmoBag";
+			_u addMagazine "VTE_1Rnd_40mm_HE";
 			_u addMagazine "VTE_1Rnd_40mm_buckshot";
 			_u addWeapon "VTE_m79";
 		};
 
 		case 18:
 	    	{
-			_u addMagazine "VTE_40mm_AmmoBag";
-			_u addMagazine "VTE_40mm_HE";
+			_u addMagazine "VTE_30Rnd_40mm_AmmoBag";
+			_u addMagazine "VTE_1Rnd_40mm_HE";
 			_u addMagazine "VTE_1Rnd_40mm_buckshot";
 			_u addWeapon "VTE_ex41";
 		};
 
 		case 19:
 	    	{
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
 			_u addWeapon "VTE_stoner_ar";
 		};
 
 		case 20:
 	    	{
-			_u addMagazine "VTE_100Rnd_556x45_M23";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
-			_u addMagazine "VTE_100Rnd_556x45_M23";
-			_u addMagazine "VTE_20Rnd_556x45_Stanag";
+			_u addMagazine "VTE_100Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
+			_u addMagazine "VTE_100Rnd_556x45";
+			_u addMagazine "VTE_20Rnd_556x45";
 			_u addWeapon "VTE_stoner_mg";
 		};
 
@@ -415,14 +415,14 @@ _PMC_Random_Rifle =
 
 		case 32:
 	    	{
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
-			_u addMagazine "VTE_10Rnd_SKS";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
 			_u addWeapon "VTE_sks";
 		};
 
@@ -441,53 +441,53 @@ _PMC_Random_Rifle =
 
 		case 34:
 	    	{
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
 			_u addWeapon "VTE_mosin38";
 		};
 
 		case 35:
 	    	{
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
 			_u addWeapon "VTE_mosin";
 		};
 
 		case 36:
 	    	{
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
-			_u addMagazine "VTE_5Rnd_mosin";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
+			_u addMagazine "VTE_5Rnd_762x54";
 			_u addWeapon "VTE_mosina";
 		};
 
 		case 37:
 	    	{
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
-			_u addMagazine "VTE_10Rnd_svt";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
+			_u addMagazine "VTE_10Rnd_762x54";
 			_u addWeapon "VTE_svt40";
 		};
 
@@ -522,18 +522,18 @@ _PMC_Random_Rifle =
 
 		case 41:
 	    	{
-			_u addMagazine "VTE_100Rnd_RPD_drum";
-			_u addMagazine "VTE_100Rnd_RPD_drum";
-			_u addMagazine "VTE_100Rnd_RPD_drum";
+			_u addMagazine "VTE_100Rnd_762x54";
+			_u addMagazine "VTE_100Rnd_762x54";
+			_u addMagazine "VTE_100Rnd_762x54";
 			_u addWeapon "VTE_rpd";
 		};
 
 		case 42:
 	    	{
-			_u addMagazine "VTE_25Rnd_762x25_PPD_Box";
-			_u addMagazine "VTE_71Rnd_762x25_PPD_Drum";
-			_u addMagazine "VTE_25Rnd_762x25_PPD_Box";
-			_u addMagazine "VTE_71Rnd_762x25_PPD_Drum";
+			_u addMagazine "VTE_25Rnd_762x25";
+			_u addMagazine "VTE_71Rnd_762x25";
+			_u addMagazine "VTE_25Rnd_762x25";
+			_u addMagazine "VTE_71Rnd_762x25";
 			_u addWeapon "VTE_ppd40";
 		};
 
@@ -721,24 +721,24 @@ VTE_8Rnd_45ACPSD
 
 --- RIFLES
 VTE_bar
-VTE_20Rnd_762x63_Stanag
+VTE_20Rnd_762x63
 
 VTE_uzi
-VTE_32Rnd_uzi
+VTE_32Rnd_9x19
 
 VTE_sten
 VTE_32Rnd_sten
 
 VTE_stensd
 VTE_32Rnd_sten
-VTE_32Rnd_stensd
+VTE_32Rnd_9x18_sd
 
 VTE_m45
-VTE_36Rnd_M45
+VTE_36Rnd_9x19
 
 VTE_thompson
 VTE_30Rnd_45ACP
-VTE_100Rnd_45ACP_Drum
+VTE_100Rnd_45ACP
 
 VTE_mas36
 VTE_5Rnd_762x51_nato
@@ -747,7 +747,7 @@ VTE_mas38
 VTE_32Rnd_765x20
 
 VTE_mp40
-VTE_32Rnd_uzi
+VTE_32Rnd_9x19
 
 VTE_mpk
 VTE_32Rnd_MPK
@@ -756,18 +756,18 @@ VTE_mpl
 VTE_32Rnd_MPK
 
 VTE_ar15
-VTE_20Rnd_556x45_Stanag
+VTE_20Rnd_556x45
 
 VTE_xm177e
-VTE_20Rnd_556x45_Stanag
+VTE_20Rnd_556x45
 
 VTE_m16a1
-VTE_20Rnd_556x45_Stanag
+VTE_20Rnd_556x45
 
 VTE_car15gl
-VTE_20Rnd_556x45_Stanag
-VTE_40mm_AmmoBag
-VTE_40mm_HE
+VTE_20Rnd_556x45
+VTE_30Rnd_40mm_AmmoBag
+VTE_1Rnd_40mm_HE
 VTE_1Rnd_40mm_buckshot
 VTE_FlareWhite_Rifle
 VTE_FlareGreen_Rifle
@@ -783,21 +783,21 @@ VTE_20Rnd_762x51_nato
 VTE_5Rnd_762x51_nato
 
 VTE_m79
-VTE_40mm_AmmoBag
-VTE_40mm_HE
+VTE_30Rnd_40mm_AmmoBag
+VTE_1Rnd_40mm_HE
 VTE_1Rnd_40mm_buckshot"
 
 VTE_ex41
-VTE_40mm_AmmoBag
-VTE_40mm_HE
+VTE_30Rnd_40mm_AmmoBag
+VTE_1Rnd_40mm_HE
 VTE_1Rnd_40mm_buckshot"
 
 VTE_stoner_ar
-VTE_20Rnd_556x45_Stanag
+VTE_20Rnd_556x45
 
 VTE_stoner_mg
-VTE_100Rnd_556x45_M23
-VTE_20Rnd_556x45_Stanag
+VTE_100Rnd_556x45
+VTE_20Rnd_556x45
 
 VTE_m60
 VTE_100Rnd_762x51_M60
@@ -836,22 +836,22 @@ VTE_type56
 VTE_30Rnd_762x43_AK
 
 VTE_sks
-VTE_10Rnd_SKS
+VTE_10Rnd_762x54
 
 VTE_type68
 VTE_20Rnd_762x43_AK
 
 VTE_mosin38
-VTE_5Rnd_mosin
+VTE_5Rnd_762x54
 
 VTE_mosin
-VTE_5Rnd_mosin
+VTE_5Rnd_762x54
 
 VTE_mosina
-VTE_5Rnd_mosin
+VTE_5Rnd_762x54
 
 VTE_svt40
-VTE_10Rnd_svt
+VTE_10Rnd_762x54
 
 VTE_ppsh41
 VTE_71Rnd_mp
@@ -863,11 +863,11 @@ VTE_dp27
 VTE_47Rnd_762x51_drum
 
 VTE_rpd
-VTE_100Rnd_RPD_drum
+VTE_100Rnd_762x54
 
 VTE_ppd40
-VTE_25Rnd_762x25_PPD_Box
-VTE_71Rnd_762x25_PPD_Drum
+VTE_25Rnd_762x25
+VTE_71Rnd_762x25
 
 VTE_k50m
 VTE_35Rnd_762x25
