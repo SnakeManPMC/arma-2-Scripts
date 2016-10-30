@@ -674,14 +674,14 @@ _PMC_Random_Pistol =
 
 		case 4:
 		{
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
-			_u addMagazine "VTE_8Rnd_45ACPSD";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
+			_u addMagazine "VTE_8Rnd_9x19sd";
 			_u addWeapon "VTE_m39hp";
 		};
 	};
