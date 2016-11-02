@@ -3,7 +3,7 @@
 	VTE random weapons for unit
 
 Syntax:
-[unit] execVM "PMC\PMC_Random_Weapons.sqf";
+[unit] execVM "PMC\PMC_VTE_Random_Weapons.sqf";
 
 Required:
 -
