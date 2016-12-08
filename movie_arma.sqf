@@ -35,12 +35,18 @@ _PMC_TitleText_Stats =
 	[
 		format
 		[
-			"Our war has: %1 tanks, %2 aircrafts, %3 men (BLUFOR: %4, OPFOR: %5)\n",
+			"Tank: %1, Aircraft: %2, Helo: %3, Car: %4, Stat: %5, Men: %6\nBLUFOR: %7, OPFOR: %8, IND: %9, KIA: %10, Corpses[]: %11",
 			('tank' countType list pmc_list),
-			('air' countType list pmc_list),
+			('Plane' countType list pmc_list),
+			('helicopter' countType list pmc_list),
+			('car' countType list pmc_list),
+			('StaticWeapon' countType list pmc_list),
 			('man' countType list pmc_list),
-			(west countSide list pmc_list),
-			(east countSide list pmc_list)
+			(WEST countSide list pmc_list),
+			(EAST countSide list pmc_list),
+			(RESISTANCE countSide list pmc_list),
+			PMC_KilledNum,
+			(count PMC_Corpses)
 		], "plain down", 2
 	];
 };
@@ -79,11 +85,11 @@ _PMC_Vehicle_Loop =
 
 	if (_LoopType == "Air") then
 	{
-		_rPos1 = -50;
-		_rPos2 = 100;
-		_rPos3 = 100;
-		_rPos4 = 100;
-		_rPos5 = 10;
+		_rPos1 = -100;
+		_rPos2 = 150;
+		_rPos3 = 50;
+		_rPos4 = 250;
+		_rPos5 = 25;
 	};
 
 	if (_LoopType == "Tank") then
@@ -168,6 +174,7 @@ titleCut ["", "BLACK OUT", 0];
 sleep 1;
 // no cinema borders in our video.
 showCinemaBorder false;
+enableRadio false;
 titleText["Welcome to a PMC War!", "plain down", 2];
 sleep 2;
 titleCut ["", "BLACK IN", 2];
@@ -188,12 +195,14 @@ while {true} do
 //	waitUntil { camCommitted _camera; };
 //	sleep 5;
 	[0, 5] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
 	_camera camSetRelPos [-20 + random 40, -20 + random 40, random 5];
 //	_camera camCommit 5;
 //	waitUntil { camCommitted _camera; };
 //	sleep 3;
 	[5, 3] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
 	_camera camSetTarget call _PMC_getMeUnit;
 	_camera camSetRelPos [-random 20, -random 20, random 5];
@@ -201,6 +210,7 @@ while {true} do
 //	waitUntil { camCommitted _camera; };
 //	sleep 5;
 	[0, 5] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
 	_doka = call _PMC_getMeUnit;
 
@@ -210,6 +220,7 @@ while {true} do
 //	waitUntil { camCommitted _camera; };
 //	sleep 5;
 	[0, 5] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
 	_camera camSetTarget getPosASL _doka;
 	_camera camSetRelPos [-20 + random 40,-20 + random 40, random 5];
@@ -217,12 +228,14 @@ while {true} do
 //	waitUntil { camCommitted _camera; };
 //	sleep 3;
 	[5, 3] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 	_camera camSetTarget getPosASL _doka;
 	_camera camSetRelPos [random 20, random 20, random 5];
 //	_camera camCommit 5;
 //	waitUntil { camCommitted _camera; };
 //	sleep 3;
 	[5, 3] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
 	_doka = call _PMC_getMeUnit;
 
@@ -232,12 +245,14 @@ while {true} do
 //	waitUntil { camCommitted _camera; };
 //	sleep 5;
 	[0, 5] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 	_camera camSetTarget getPosASL _doka;
 	_camera camSetRelPos [-20 + random 40, -20 + random 40, random 5];
 //	_camera camCommit 5;
 //	waitUntil { camCommitted _camera; };
 //	sleep 3;
 	[5, 3] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
 	_doka = call _PMC_getMeUnit;
 
@@ -250,15 +265,20 @@ while {true} do
 //	_camera camCommit 0;
 //	waitUntil { camCommitted _camera; };
 	[0, 0] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 	_camera camSetTarget _doka;
 	_camera camSetRelPos [0, 1, 1];
 //	_camera camCommit 25;
 //	waitUntil { camCommitted _camera; };
 //	sleep 5;
 	[25, 5] call _PMC_Camera_Commit;
+	call _PMC_TitleText_Stats;
 
-	[10, "Air"] call _PMC_Vehicle_Loop;
-	[20, "Tank"] call _PMC_Vehicle_Loop;
+	[20, "Air"] call _PMC_Vehicle_Loop;
+	call _PMC_TitleText_Stats;
+	[5, "Tank"] call _PMC_Vehicle_Loop;
+	call _PMC_TitleText_Stats;
+	[20, "Air"] call _PMC_Vehicle_Loop;
 
 	// show stats title text
 	call _PMC_TitleText_Stats;
